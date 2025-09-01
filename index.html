@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Hotline</title>
+    <link rel="stylesheet" href="tailwind.config.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+/>
+  </head>
+  <body>
+    <header class="w-[100vw]">
+      <nav class="bg-white flex justify-between px-[60px] py-[24px]">
+        <div class="flex items-center gap-[5px]">
+          <img src="./assets/logo.png" class="w-[50px]" alt="" />
+          <h3
+            class="text-[#006747] font-extrabold font-['Hind Madurai'] text-2xl"
+          >
+            Emergency <br />
+            Service
+          </h3>
+        </div>
+        <div class="flex justify-between gap-5 font-['Inter']">
+          <div
+            class="px-[35px] py-[12px] flex items-center gap-2.5 bg-[#41ff6b1a] rounded-[50px]"
+          >
+            <h3 class="font-extrabold">0</h3>
+            <img src="./assets/heart.png" class="w-[30px]" alt="" />
+          </div>
+          <div
+            class="px-[35px] py-[12px] flex items-center gap-2.5 bg-[#41ff6b1a] rounded-[50px]"
+          >
+            <h3 class="font-extrabold">100</h3>
+            <img src="./assets/coin.png" class="w-[30px]" alt="" />
+          </div>
+          <div
+            class="px-[35px] py-[12px] flex items-center bg-[#00a63e] rounded-[50px]"
+          >
+            <h3 class="text-[#ffffff] font-bold">
+              <span class="mr-2.5">2</span>Copy
+            </h3>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero section -->
+      <section
+        class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] px-[60px] py-[12px]"
+      >
+        <img src="./assets/logo.png" class="w-[90px] mx-auto" alt="" />
+        <h3
+          class="text-[#ffffff] font-['Hind Madurai'] font-bold text-center text-[2.5rem] mt-3"
+        >
+          Emergency Service Directory
+        </h3>
+        <p
+          class="text-center text-[#ffffff] font-['Hind Madurai']font-['Hind Madurai'] text-[1.2rem] mt-3"
+        >
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </section>
+    </header>
+    <body>
+      <!-- Cards section -->
+      <section>
+        <div class="p-8">
+          <div class="">
+            <img src="./assets/emergency.png" class="w-[32px]" alt="" />
+            <i class="fa-regular fa-heart w-[24px] text-white"></i>
+          </div>
+
+          <div>
+            <h3>National Emergency Number</h3>
+            <p>National Emergency</p>
+            <h3>999</h3>
+            <h6>All</h6>
+          </div>
+          <div>
+            <button class="btn px-[60px] py-[16px] rounded-[10px] "> <i class="fa-regular fa-copy"></i>Copy</button>
+            <button class="btn bg-[#00a63e] px-[60px] py-[16px] rounded-[10px] text-white">Primary</button>
+          </div>
+        </div>
+      </section>
+    </body>
+  </body>
 </html>
