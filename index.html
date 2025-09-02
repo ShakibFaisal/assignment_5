@@ -37,21 +37,22 @@
           
         </div>
         <div class="flex justify-between gap-5 font-['Inter']">
-          <button
-            class="px-[35px] py-[12px] flex items-center gap-2.5 bg-[#41ff6b1a] rounded-[50px]"
+          <button 
+
+            type="button" class="px-[35px] py-[12px] flex items-center gap-2.5 bg-[#41ff6b1a] rounded-[50px]"
           >
-            <h3 class="font-extrabold">0</h3>
+            <h3 class="font-extrabold" id="heart_count">0</h3>
             <img src="./assets/heart.png" class="w-[30px]" alt="Heart" />
           </button>
           <button
-            class="px-[35px] py-[12px] flex items-center gap-2.5 bg-[#41ff6b1a] rounded-[50px]"
+            type="button" class="px-[35px] py-[12px] flex items-center gap-2.5 bg-[#41ff6b1a] rounded-[50px]"
           >
-            <h3 class="font-extrabold">100</h3>
+            <h3 class="font-extrabold " id="coin">100</h3>
             <img src="./assets/coin.png" class="w-[30px]" alt="Coin" />
           </button>
 
           <button
-            class="px-[35px] py-[12px] flex items-center bg-[#00a63e] rounded-[50px]"
+            class="px-[35px] py-[12px] flex items-center bg-[#00a63e] rounded-[50px] " type="button"
           >
             <h3 class="text-[#ffffff] font-bold">
               <span class="mr-2.5">2</span>Copy
@@ -77,28 +78,28 @@
         </p>
       </section>
     </header>
-    <body class="">
+    <main class="">
       <!-- Cards section -->
       <section class="bg-[#f5fff6] px-10 py-9 grid md:grid-cols-4 grid-cols-1 ">
         <div class="col-span-3 grid md:grid-cols-3 grid-cols-1 gap-5">
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px]  shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px]  shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#ffe3e2] rounded-2xl">
                 <img src="./assets/emergency.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px] heart" ></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 National Emergency Number
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                 National Emergency
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">999</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">999</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -110,30 +111,30 @@
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7 mb-2.5 md:mb-0  md:px-[50px] rounded-[10px] text-white"
+                class="call btn bg-[#00a63e] px-7 mb-2.5 md:mb-0  md:px-[50px] rounded-[10px] text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#dfefff] rounded-2xl">
                 <img src="./assets/police.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px] heart" ></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 Police Helpline Number
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                 Police
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">999</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">999</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -145,30 +146,30 @@
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
+                class="call btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
               >
-               <i class="fa-solid fa-phone"></i> Call
+               <i class=" fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#ffe3e2] rounded-2xl">
                 <img src="./assets/fire-service.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px] heart" ></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 Fire Service Number
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                 Fire Service
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">999</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">999</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -176,34 +177,34 @@
               </button>
             </div>
             <div class="flex justify-between">
-              <button class="btn px-7 mb-2.5 md:mb-0  md:px-[50px]] rounded-[10px]">
+              <button class="btn px-7 mb-2.5 md:mb-0  md:px-[50px] rounded-[10px]">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7  md:px-[50px] rounded-[10px] text-white"
+                class="call btn bg-[#00a63e] px-7  md:px-[50px] rounded-[10px] text-white"
               >
-               <i class="fa-solid fa-phone"></i> Call
+               <i class=" fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#ffe3e2] rounded-2xl">
                 <img src="./assets/ambulance.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px] heart"></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 Ambulance Service
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                Ambulance
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">1994-999999</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">1994-999999</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -215,30 +216,30 @@
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7   md:px-[50px]rounded-[10px] text-white"
+                class="call btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
               >
                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#ffe3e2] rounded-2xl">
                 <img src="./assets/emergency.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px] heart"></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 Women & Child Helpline
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                 Women & Child Helpline
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">109</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">109</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -250,30 +251,30 @@
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
+                class=" call btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
               >
                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#ffe3e2] rounded-2xl">
                 <img src="./assets/emergency.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px] heart"></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 Anti-Corruption Helpline
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                 Anti-Corruption
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">106</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">106</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -285,30 +286,30 @@
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7  md:px-[50px] rounded-[10px] text-white"
+                class="call btn bg-[#00a63e] px-7  md:px-[50px] rounded-[10px] text-white"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#ffe3e2] rounded-2xl">
                 <img src="./assets/emergency.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px] heart"></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 Electricity Helpline
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                 Electricity Outage
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">16216</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">16216</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -320,30 +321,30 @@
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
+                class="call btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
               >
                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#ffe3e2] rounded-2xl">
                 <img src="./assets/emergency.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px] heart"></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 Brac Helpline
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                 Brac
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">16445</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">16445</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -355,30 +356,30 @@
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
+                class="call btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
               >
                <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
+            class="card p-8 bg-[#ffffff] max-w-[400px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[10px]"
           >
             <div class="flex justify-between">
               <div class="p-4 bg-[#ffe3e2] rounded-2xl">
                 <img src="./assets/emergency.png" class="w-[32px]" alt="" />
               </div>
-              <i class="fa-regular fa-heart w-[24px]"></i>
+              <i class="fa-regular fa-heart w-[24px]  heart"></i>
             </div>
 
             <div class="">
-              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4">
+              <h3 class="font-['Hind Madurai'] text-2xl font-bold mt-4 title">
                 Bangladesh Railway Helpline 
               </h3>
-              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c]">
+              <p class="font-['Roboto'] text-[1.1rem] text-[#5c5c5c] sub_title">
                 Bangladesh Railway
               </p>
-              <h3 class="font-['Roboto'] text-3xl font-bold mt-5">163</h3>
+              <h3 class="font-['Roboto'] text-3xl font-bold mt-5 number">163</h3>
               <button
                 class="font-['Roboto'] bg-[#f2f2f2] px-[16px] py-[10x] text-[#5c5c5c] rounded-[10px] mt-2.5 mb-5"
               >
@@ -390,7 +391,7 @@
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button
-                class="btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
+                class="call btn bg-[#00a63e] px-7   md:px-[50px] rounded-[10px] text-white"
               >
                <i class="fa-solid fa-phone"></i> Call
               </button>
@@ -414,6 +415,7 @@
           </div>
         </div>
       </section>
-    </body>
+    </main>
+    <script src="./script.js"></script>
   </body>
 </html>
