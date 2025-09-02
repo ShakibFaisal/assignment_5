@@ -60,3 +60,17 @@ document.getElementById("clear").addEventListener("click",function (event){
      const history=document.getElementById("history");
      history.innerHTML="";
 })
+// copy related js
+document.querySelectorAll(".copy").forEach((btn) =>{
+    btn.addEventListener("click",function(event){
+        event.preventDefault();
+        const copys=domID("copy_count");
+        let copy_count=value(copys);
+        copy_count+=1;
+        copys.innerText=copy_count;
+        const parent = btn.closest(".card");
+        const number = parent.querySelector(".number").innerText;
+        navigator.clipboard.writeText(number)
+        alert("নম্বর কপি হয়েছে : "+number );
+    })
+})
